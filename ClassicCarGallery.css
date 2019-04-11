@@ -16,13 +16,23 @@ body nav {
 }
 
 body nav span {
-  padding: 2vw;
+  padding: 1vw;
+  font-size: 3.5vw;
   font-family: 'Indie Flower';
 }
 
 body nav span:hover {
   font-weight: 600;
   text-shadow: 0.3vw 0.6vw 0.1vw black;
+}
+
+body nav img {
+  margin: 1vw;
+  width: 5vw;
+  height: 5vw;
+  border: 0.2vw solid silver;
+  border-radius: 1vw;
+  transform: rotate(90deg);
 }
 
 body nav button {
@@ -90,29 +100,31 @@ body #newSection {
 }
 
 body #newSection #newPicture {
+  border: 0.1vw solid gold;
   width: 75%;
   height: 75%;
 }
 
 body #newSection #newPicture:hover {
-  opacity: 0.5;
-  transition: all 2s linear;
+  opacity: 0.6;
+  transition: all 6s linear;
 }
 
 body #newSection #closeSpan {
   position: absolute;
   right: 13vw;
   top: 6.5vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
   padding: 0.5vw;
-  color: grey;
+  border: 0.1vw solid gold;
+  border-radius: 0.5vw;
+  color: gold;
   opacity: 0.5;
   background: white;
-  border-radius: 4vw;
 }
 
 body #newSection #closeSpan:hover {
-  background: red;
+  background: salmon;
   opacity: 0.9;
   color: white;
   cursor: pointer;

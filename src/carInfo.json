@@ -1,14 +1,17 @@
 [
   {"id": 1, "title": "British Elegance", "address": "../src/ClassicCars/astonMartin.jpg", "description": "DESCRIPTION"},
   {"id": 2, "title": "American muscle flexing", "address": "../src/ClassicCars/charger.jpg", "description": "DESCRIPTION"},
-  {"id": 3, "title": "More power is never bad", "address": "../src/ClassicCars/gto.jpg", "description": "DESCRIPTION"},
+  {"id": 3, "title": "A european with a touch of american style", "address": "../src/ClassicCars/taunus.jpg", "description": "DESCRIPTION"},
   {"id": 4, "title": "A dream to drive", "address": "../src/ClassicCars/stingray.jpg", "description": "DESCRIPTION"},
-  {"id": 5, "title": "Abandouned but still a beauty", "address": "../src/ClassicCars/DeadBorgward.jpg", "description": "DESCRIPTION"},
-  {"id": 6, "title": "title", "address": "../src/ClassicCars/mustang.jpg", "description": "DESCRIPTION"},
-  {"id": 7, "title": "title", "address": "../src/ClassicCars/plymoth.jpg", "description": "DESCRIPTION"},
-  {"id": 8, "title": "title", "address": "../src/ClassicCars/VolvoKombi.jpg", "description": "DESCRIPTION"},
-  {"id": 9, "title": "title", "address": "../src/ClassicCars/silverCadillac.jpg", "description": "DESCRIPTION"},
-  {"id": 10, "title": "title", "address": "../src/ClassicCars/BeetleCabrio.jpg", "description": "DESCRIPTION"},
-  {"id": 11, "title": "title", "address": "../src/ClassicCars/1970Gatsby.jpg", "description": "DESCRIPTION"},
-  {"id": 12, "title": "title", "address": "../src/ClassicCars/dodge.jpg", "description": "DESCRIPTION"}
+  {"id": 5, "title": "Abandoned but still a beauty", "address": "../src/ClassicCars/DeadBorgward.jpg", "description": "DESCRIPTION"},
+  {"id": 6, "title": "The legendary Mustang", "address": "../src/ClassicCars/mustang.jpg", "description": "DESCRIPTION"},
+  {"id": 7, "title": "Comfortable and powerful", "address": "../src/ClassicCars/plymoth.jpg", "description": "DESCRIPTION"},
+  {"id": 8, "title": "A reliable German", "address": "../src/ClassicCars/volkswagenTyp3.jpg", "description": "DESCRIPTION"},
+  {"id": 9, "title": "Silver surfer", "address": "../src/ClassicCars/silverCadillac.jpg", "description": "DESCRIPTION"},
+  {"id": 10, "title": "A classic roofless", "address": "../src/ClassicCars/BeetleCabrio.jpg", "description": "DESCRIPTION"},
+  {"id": 11, "title": "Rare und just beautiful", "address": "../src/ClassicCars/1970Gatsby.jpg", "description": "DESCRIPTION"},
+  {"id": 12, "title": "Picks it up", "address": "../src/ClassicCars/dodge.jpg", "description": "DESCRIPTION"},
+  {"id": 13, "title": "More power is never bad", "address": "../src/ClassicCars/gto.jpg", "description": "DESCRIPTION"},
+  {"id": 14, "title": "Scandinavian steel is thicker", "address": "../src/ClassicCars/VolvoKombi.jpg", "description": "DESCRIPTION"},
+  {"id": 15, "title": "The one for everything", "address": "../src/ClassicCars/vwBulli.jpg", "description": "DESCRIPTION"}
 ]

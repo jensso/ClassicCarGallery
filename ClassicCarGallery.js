@@ -35,7 +35,7 @@ const biggerPicture = image.addEventListener(`click`, ev=> {
         newPicture.setAttribute(`id`,`newPicture`);
         let closeSpan = document.createElement(`SPAN`);
         closeSpan.setAttribute(`id`,`closeSpan`);
-        closeSpan.innerText = `close`;
+        closeSpan.innerText = `X`;
         newPicture.src = imageAddress[i].address;
         newSection.appendChild(newPicture);
         newSection.appendChild(closeSpan);
