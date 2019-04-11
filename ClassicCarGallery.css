@@ -89,6 +89,10 @@ body #container section img:hover {
   border-radius: 1vw;
 }
 
+body #container section span {
+  font-size: 1vw;
+}
+
 body #container section h2 {
   font-family: 'Indie Flower';
   font-size: 2vw;
