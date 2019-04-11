@@ -1,5 +1,5 @@
 body {
-  background: grey;
+  background: silver;
   margin: 0.5vw;
 }
 
@@ -7,22 +7,42 @@ body nav {
   display: flex;
   justify-content: space-between;
   color: white;
-  background: lightblue;
+  background: grey;
   font-size: 3.5vw;
-  border: 0.2vw solid lime;
-  border-radius: 2vw;
+  margin: 1vw;
+  padding: 1vw;
+  border: 0.2vw solid white;
+  border-radius: 1vw;
 }
 
 body nav span {
   padding: 2vw;
-  border-radius: 2vw;
+  font-family: 'Indie Flower';
 }
 
 body nav span:hover {
+  font-weight: 600;
+  text-shadow: 0.3vw 0.6vw 0.1vw black;
+}
+
+body nav button {
+  font-weight: 800;
+  padding: 2vw;
+  border: 0.2vw solid white;
+  border-radius: 1vw;
+  color: white;
+  background: black;
+}
+
+body nav button:hover {
   cursor: pointer;
   color: grey;
   background: white;
-  transition: all 2s linear;
+  transition: background-color 1s linear;
+}
+
+body nav button:focus {
+  outline: none;
 }
 
 body #container {
@@ -33,11 +53,11 @@ body #container {
 
 body #container section {
   width: 25vw;
-  margin: 2vw 1vw;
+  margin: 2vw auto;
   padding: 1.5vw;
-  background: silver;
-  border: 0.1vw solid lime;
-  box-shadow: 0.4vw 0.4vw #040404;
+  background: grey;
+  border: 0.1vw solid white;
+  box-shadow: 0.4vw 0.2vw 0.4vw #040404;
   text-align: center;
 }
 
@@ -47,23 +67,15 @@ body #container section img {
 }
 
 body #container section img:hover {
-  cursor: crosshair;
-  opacity: 0.2;
-  transform: rotateY(720deg);
-  border-radius: 50%;
-  transition: all 4s ease-out;
+  cursor: pointer;
+  opacity: 0.7;
+  border-radius: 1vw;
 }
 
 body #container section p, body #container section h2 {
-  font-family: arial;
+  font-family: 'Indie Flower';
   font-size: 2vw;
-  text-shadow: 0.2vw 0.2vw white;
-}
-
-body #container section p:hover, body #container section h2:hover {
-  cursor: progress;
-  transform: rotateY(360deg);
-  transition: all 2s linear;
+  text-shadow: 0.2vw 0.2vw 0.2vw white;
 }
 
 body #newSection {
@@ -83,23 +95,25 @@ body #newSection #newPicture {
 }
 
 body #newSection #newPicture:hover {
-  transform: rotateX(270deg);
-  transition: all 5s linear;
+  opacity: 0.5;
+  transition: all 2s linear;
 }
 
 body #newSection #closeSpan {
   position: absolute;
-  right: 4vw;
-  top: 4vw;
-  font-size: 2vw;
+  right: 13vw;
+  top: 6.5vw;
+  font-size: 1.5vw;
   padding: 0.5vw;
-  color: red;
+  color: grey;
+  opacity: 0.5;
   background: white;
-  border-radius: 50%;
+  border-radius: 4vw;
 }
 
 body #newSection #closeSpan:hover {
   background: red;
+  opacity: 0.9;
   color: white;
   cursor: pointer;
 }

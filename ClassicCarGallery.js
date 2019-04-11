@@ -1,11 +1,11 @@
-let fetchSpan = document.querySelector(`span:nth-of-type(2)`);
+const fetchBtn = document.querySelector(`button`);
 
-let getImage = async ev => {
+const getImage = async (ev) => {
 ev.currentTarget.removeEventListener(`click`,getImage);
-let imageFolder = `./src/carInfo.json`;
-let imageLink = await fetch(imageFolder);
-let imageAddress = await imageLink.json();
-// console.log(imageAddress);
+const imageFolder = `./src/carInfo.json`;
+const imageLink = await fetch(imageFolder);
+const imageAddress = await imageLink.json();
+
 for (let i = 0; i < imageAddress.length; i++) {
 
       let container = document.querySelector(`#container`);
@@ -24,9 +24,11 @@ for (let i = 0; i < imageAddress.length; i++) {
       section.appendChild(image);
       section.appendChild(header);
       section.appendChild(paragraph);
-      document.body.appendChild(container);
+      setInterval(()=> {
+        document.body.appendChild(container);
+      },2000);
 
-      let biggerPicture = image.addEventListener(`click`, ev=> {
+const biggerPicture = image.addEventListener(`click`, ev=> {
         let newSection = document.createElement(`SECTION`);
         newSection.setAttribute(`id`, `newSection`);
         let newPicture = document.createElement(`IMG`);
@@ -34,20 +36,15 @@ for (let i = 0; i < imageAddress.length; i++) {
         let closeSpan = document.createElement(`SPAN`);
         closeSpan.setAttribute(`id`,`closeSpan`);
         closeSpan.innerText = `close`;
-
         newPicture.src = imageAddress[i].address;
-
         newSection.appendChild(newPicture);
         newSection.appendChild(closeSpan);
         document.body.appendChild(newSection);
-
         closeSpan.addEventListener(`click`, ev=> {
-          document.body.removeChild(newSection);
-
+        document.body.removeChild(newSection);
           })
       })
-
     }
 }
 
-fetchSpan.addEventListener(`click`,getImage);
+fetchBtn.addEventListener(`click`,getImage);
