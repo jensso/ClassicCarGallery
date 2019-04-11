@@ -2,7 +2,7 @@ let fetchSpan = document.querySelector(`span:nth-of-type(2)`);
 
 let getImage = async ev => {
 ev.currentTarget.removeEventListener(`click`,getImage);
-let imageFolder = `./src/abc.json`;
+let imageFolder = `./src/carInfo.json`;
 let imageLink = await fetch(imageFolder);
 let imageAddress = await imageLink.json();
 // console.log(imageAddress);

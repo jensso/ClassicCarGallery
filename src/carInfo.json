@@ -1,0 +1,14 @@
+[
+  {"id": 1, "title": "British Elegance", "address": "../src/ClassicCars/astonMartin.jpg", "description": "DESCRIPTION"},
+  {"id": 2, "title": "American muscle flexing", "address": "../src/ClassicCars/charger.jpg", "description": "DESCRIPTION"},
+  {"id": 3, "title": "More power is never bad", "address": "../src/ClassicCars/gto.jpg", "description": "DESCRIPTION"},
+  {"id": 4, "title": "A dream to drive", "address": "../src/ClassicCars/stingray.jpg", "description": "DESCRIPTION"},
+  {"id": 5, "title": "Abandouned but still a beauty", "address": "../src/ClassicCars/DeadBorgward.jpg", "description": "DESCRIPTION"},
+  {"id": 6, "title": "title", "address": "../src/ClassicCars/mustang.jpg", "description": "DESCRIPTION"},
+  {"id": 7, "title": "title", "address": "../src/ClassicCars/plymoth.jpg", "description": "DESCRIPTION"},
+  {"id": 8, "title": "title", "address": "../src/ClassicCars/VolvoKombi.jpg", "description": "DESCRIPTION"},
+  {"id": 9, "title": "title", "address": "../src/ClassicCars/silverCadillac.jpg", "description": "DESCRIPTION"},
+  {"id": 10, "title": "title", "address": "../src/ClassicCars/BeetleCabrio.jpg", "description": "DESCRIPTION"},
+  {"id": 11, "title": "title", "address": "../src/ClassicCars/1970Gatsby.jpg", "description": "DESCRIPTION"},
+  {"id": 12, "title": "title", "address": "../src/ClassicCars/dodge.jpg", "description": "DESCRIPTION"}
+]
