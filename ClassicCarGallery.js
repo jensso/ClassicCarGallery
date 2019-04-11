@@ -1,34 +1,42 @@
 const fetchBtn = document.querySelector(`button`);
 
 const getImage = async (ev) => {
-ev.currentTarget.removeEventListener(`click`,getImage);
-const imageFolder = `./src/carInfo.json`;
-const imageLink = await fetch(imageFolder);
-const imageAddress = await imageLink.json();
-
+  ev.currentTarget.removeEventListener(`click`,getImage);
+  const imageFolder = `./src/carInfo.json`;
+  const imageLink = await fetch(imageFolder);
+  const imageAddress = await imageLink.json();
+try {
 for (let i = 0; i < imageAddress.length; i++) {
+  let delayFetch = (name, time) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(fetch(imageFolder))
+        }, time)
+      })
+    }
+        let carToShow = await delayFetch(imageAddress[i],1500);
+        await carToShow.json();
 
       let container = document.querySelector(`#container`);
       let section = document.createElement(`SECTION`);
-      // section.setAttribute(`className`,`fetched`);
-      // section.classList.add(`fetched`);
       let image = document.createElement(`IMG`);
+      let span = document.createElement('SPAN');
       let header = document.createElement(`H2`);
       let paragraph = document.createElement(`P`);
 
       image.src = imageAddress[i].address;
+      span.innerText = 'click the car to enlarge view';
       header.innerText = imageAddress[i].title;
       paragraph.innerText = imageAddress[i].description;
 
       container.appendChild(section);
       section.appendChild(image);
+      section.appendChild(span);
       section.appendChild(header);
       section.appendChild(paragraph);
-      setInterval(()=> {
-        document.body.appendChild(container);
-      },2000);
+      document.body.appendChild(container);
 
-const biggerPicture = image.addEventListener(`click`, ev=> {
+  const biggerPicture = image.addEventListener(`click`, (ev)=> {
         let newSection = document.createElement(`SECTION`);
         newSection.setAttribute(`id`, `newSection`);
         let newPicture = document.createElement(`IMG`);
@@ -40,11 +48,16 @@ const biggerPicture = image.addEventListener(`click`, ev=> {
         newSection.appendChild(newPicture);
         newSection.appendChild(closeSpan);
         document.body.appendChild(newSection);
-        closeSpan.addEventListener(`click`, ev=> {
+
+        closeSpan.addEventListener(`click`, (ev)=> {
         document.body.removeChild(newSection);
           })
       })
     }
-}
+  }
+catch (error) {
+      console.log(error);
+    }
+};
 
 fetchBtn.addEventListener(`click`,getImage);

@@ -27,6 +27,12 @@ nav {
       border: 0.2vw solid silver;
       border-radius: 1vw;
       transform: rotate(90deg);
+      &:hover {
+        cursor: crosshair;
+        border-radius: 4vw;
+        transform: scaleX(-1);
+        transition: all 1s linear;
+      }
     }
 
 
@@ -51,7 +57,7 @@ nav {
 }
 #container {
 display: flex;
-flex-wrap: wrap;
+flex-wrap: wrap-reverse;
 justify-content: space-around;
 section {
   width: 25vw;
@@ -70,10 +76,15 @@ section {
       border-radius: 1vw;
     }
   }
-  p, h2 {
+  h2 {
     font-family: 'Indie Flower';
     font-size: 2vw;
     text-shadow: 0.2vw 0.2vw 0.2vw white;
+    }
+    p {
+      font-family: verdana;
+      font-size: 2vw;
+      text-shadow: 0.2vw 0.2vw 0.2vw silver;
     }
   }
 }
@@ -88,18 +99,16 @@ section {
     align-items: center;
     #newPicture {
       border: 0.1vw solid gold;
-      width: 75%;
-      height: 75%;
+      width: 90%;
+      height: 90%;
       &:hover {
-        opacity: 0.6;
-        transition: all 6s linear;
+        opacity: 0.5;
+        transition: opacity 10s linear;
         }
     }
     #closeSpan {
-      position: absolute;
-      right: 13vw;
-      top: 6.5vw;
-      font-size: 1vw;
+      align-self: auto;
+     font-size: 1vw;
       padding: 0.5vw;
       border: 0.1vw solid gold;
       border-radius: 0.5vw;

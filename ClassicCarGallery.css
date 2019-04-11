@@ -35,6 +35,13 @@ body nav img {
   transform: rotate(90deg);
 }
 
+body nav img:hover {
+  cursor: crosshair;
+  border-radius: 4vw;
+  transform: scaleX(-1);
+  transition: all 1s linear;
+}
+
 body nav button {
   font-weight: 800;
   padding: 2vw;
@@ -57,7 +64,7 @@ body nav button:focus {
 
 body #container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
 }
 
@@ -82,10 +89,16 @@ body #container section img:hover {
   border-radius: 1vw;
 }
 
-body #container section p, body #container section h2 {
+body #container section h2 {
   font-family: 'Indie Flower';
   font-size: 2vw;
   text-shadow: 0.2vw 0.2vw 0.2vw white;
+}
+
+body #container section p {
+  font-family: verdana;
+  font-size: 2vw;
+  text-shadow: 0.2vw 0.2vw 0.2vw silver;
 }
 
 body #newSection {
@@ -101,19 +114,17 @@ body #newSection {
 
 body #newSection #newPicture {
   border: 0.1vw solid gold;
-  width: 75%;
-  height: 75%;
+  width: 90%;
+  height: 90%;
 }
 
 body #newSection #newPicture:hover {
-  opacity: 0.6;
-  transition: all 6s linear;
+  opacity: 0.5;
+  transition: opacity 10s linear;
 }
 
 body #newSection #closeSpan {
-  position: absolute;
-  right: 13vw;
-  top: 6.5vw;
+  align-self: auto;
   font-size: 1vw;
   padding: 0.5vw;
   border: 0.1vw solid gold;
