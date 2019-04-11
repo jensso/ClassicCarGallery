@@ -1,0 +1,98 @@
+body {
+  background: grey;
+  margin:  0.5vw;
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: lightblue;
+  font-size: 3.5vw;
+  border: 0.2vw solid lime;
+  border-radius: 2vw;
+
+  span {
+    padding: 2vw;
+    border-radius: 2vw;
+
+    &:hover {
+      cursor: pointer;
+      color: grey;
+      background: white;
+      transition: all 2s linear;
+    }
+  }
+}
+
+#container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+section {
+  width: 25vw;
+  margin: 2vw 1vw;
+  padding: 1.5vw;
+  background: silver;
+  border: 0.1vw solid lime;
+  box-shadow: 0.4vw 0.4vw #040404;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 50%;
+    &:hover {
+      cursor: crosshair;
+      opacity: 0.2;
+      transform: rotateY(720deg);
+      border-radius: 50%;
+      transition: all 4s ease-out;
+    }
+  }
+  p, h2 {
+    font-family: arial;
+    font-size: 2vw;
+    text-shadow: 0.2vw 0.2vw white;
+
+    &:hover {
+      cursor: progress;
+      transform: rotateY(360deg);
+      transition: all 2s linear;
+      }
+    }
+  }
+}
+  #newSection {
+    width: 100%;
+    height: 100%;
+    background: rgba(150,150,150,0.8);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #newPicture {
+      width: 75%;
+      height: 75%;
+
+      &:hover {
+        transform: rotateX(270deg);
+        transition: all 5s linear;
+        }
+    }
+    #closeSpan {
+      position: absolute;
+      right: 4vw;
+      top: 4vw;
+      font-size: 2vw;
+      padding: 0.5vw;
+      color: red;
+      background: white;
+      border-radius: 50%;
+      &:hover {
+        background: red;
+        color: white;
+        cursor: pointer;
+    }
+    }
+  }
+}
