@@ -116,6 +116,10 @@ body #newSection {
   align-items: center;
 }
 
+body #newSection:hover {
+  cursor: pointer;
+}
+
 body #newSection #newPicture {
   border: 0.1vw solid gold;
   width: 90%;

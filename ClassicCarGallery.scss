@@ -100,6 +100,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
     #newPicture {
       border: 0.1vw solid gold;
       width: 90%;
