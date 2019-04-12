@@ -41,18 +41,11 @@ for (let i = 0; i < imageAddress.length; i++) {
         newSection.setAttribute('id', 'newSection');
         let newPicture = document.createElement('IMG');
         newPicture.setAttribute('id','newPicture');
-        let closeSpan = document.createElement('SPAN');
-        closeSpan.setAttribute('id','closeSpan');
-        closeSpan.innerText = 'X';
         newPicture.src = imageAddress[i].address;
         newSection.appendChild(newPicture);
-        newSection.appendChild(closeSpan);
         document.body.appendChild(newSection);
 
-        closeSpan.addEventListener('click', (ev)=> {
-        document.body.removeChild(newSection);
-          })
-        newSection.addEventListener('click', (ev)=> {
+        newPicture.addEventListener('click', (ev)=> {
           document.body.removeChild(newSection);
             })
 

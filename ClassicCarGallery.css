@@ -1,6 +1,5 @@
 body {
   background: silver;
-  margin: 0.5vw;
 }
 
 body nav {
@@ -65,7 +64,6 @@ body nav button:focus {
 body #container {
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
 }
 
 body #container section {
@@ -90,7 +88,8 @@ body #container section img:hover {
 }
 
 body #container section span {
-  font-size: 1vw;
+  color: silver;
+  font-size: 0.8vw;
 }
 
 body #container section h2 {
@@ -101,7 +100,7 @@ body #container section h2 {
 
 body #container section p {
   font-family: verdana;
-  font-size: 2vw;
+  font-size: 2.2vw;
   text-shadow: 0.2vw 0.2vw 0.2vw silver;
 }
 
@@ -121,7 +120,7 @@ body #newSection:hover {
 }
 
 body #newSection #newPicture {
-  border: 0.1vw solid gold;
+  border: 0.2vw solid gold;
   width: 90%;
   height: 90%;
 }
@@ -129,22 +128,4 @@ body #newSection #newPicture {
 body #newSection #newPicture:hover {
   opacity: 0.5;
   transition: opacity 10s linear;
-}
-
-body #newSection #closeSpan {
-  align-self: auto;
-  font-size: 1vw;
-  padding: 0.5vw;
-  border: 0.1vw solid gold;
-  border-radius: 0.5vw;
-  color: gold;
-  opacity: 0.5;
-  background: white;
-}
-
-body #newSection #closeSpan:hover {
-  background: salmon;
-  opacity: 0.9;
-  color: white;
-  cursor: pointer;
 }
